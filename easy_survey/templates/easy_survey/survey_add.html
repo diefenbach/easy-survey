@@ -1,0 +1,17 @@
+{% extends "easy_survey/base.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <div class="es-survey"
+                 _="on dblclick hide me
+                    then show next <input/>
+                    then call #question-edit-1.focus()">
+                New Survey
+            </div>
+            <input class="form-control" type="text" name="survey-title" value="New Survey" style="display:none" id="question-edit-1"
+                   _=""/>
+        </div>
+    </div>
+{% endblock %}
